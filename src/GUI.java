@@ -16,6 +16,7 @@ public class GUI extends JFrame {
     public GUI() {
         setTitle("Form Input Data Penduduk");
         setSize(800, 600);
+        setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
 
@@ -86,6 +87,7 @@ public class GUI extends JFrame {
         // Status
         formPanel.add(new JLabel("Status Perkawinan:"));
         status = new JComboBox<>(new String[] { "Belum Menikah", "Menikah", "Janda/Duda" });
+        status.setPreferredSize(new Dimension(200, 25));
         formPanel.add(status);
 
         // Pekerjaan
